@@ -1,6 +1,5 @@
-import { Card, CardContent, CardHeader, Grid,Typography,Container,TextField
-    ,Select ,MenuItem,FormControl,Input, InputLabel, FormHelperText, Button } from '@mui/material'
-import { Box, margin } from '@mui/system';
+import { Typography,Container,TextField,Select ,MenuItem,FormControl,Input, InputLabel, FormHelperText, Button } from '@mui/material'
+import { Box } from '@mui/system';
 import React, { useState } from 'react'
     
 
@@ -17,7 +16,6 @@ const nextBtn = {
     lineHeight: '20px',
     fontWeight: '600',
     border: 'none',
-    height: '50px',
 }
 
 export default function UserDetail({setPage, setUserData}) {
@@ -42,7 +40,7 @@ export default function UserDetail({setPage, setUserData}) {
             console.log("please fill all filled!");
             return ;
         }
-        if(emailValidation() == false)
+        if(emailValidation() === false)
         {
             console.log("hey wrong mail");
             return ;

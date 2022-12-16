@@ -1,6 +1,6 @@
 import  React ,{useState} from 'react';
 import {AppBar, Box, Toolbar, Typography, Stack, Button, Menu, MenuItem} from '@mui/material';
-import {Tooltip, IconButton, Avatar} from '@mui/material';
+import {Tooltip, IconButton } from '@mui/material';
 
 import logo from '.././yoga_logo.png';
 import { useNavigate } from 'react-router-dom';

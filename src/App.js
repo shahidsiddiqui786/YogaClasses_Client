@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './components/Header';
+
 import Landing from './components/Landing';
 import Register from './components/register/Register'
-import Box from '@mui/material/Box';
+
 import Profile from './components/Profile';
 import Progress from './components/Progress';
 import { useState } from 'react';

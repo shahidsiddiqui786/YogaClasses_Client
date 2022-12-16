@@ -1,7 +1,6 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Poster from '.././progress.jpg'
 
 
 export default function Progress() {

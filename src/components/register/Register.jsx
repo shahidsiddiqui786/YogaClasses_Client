@@ -1,6 +1,5 @@
-import { Card, CardContent, CardHeader, Grid,Typography,Container,TextField
-    ,Select ,MenuItem,FormControl, InputLabel, FormHelperText, Button, styled } from '@mui/material'
-import { Box, margin } from '@mui/system';
+import { Card, CardContent, CardHeader, Grid,Container} from '@mui/material'
+import { Box } from '@mui/system';
 import React, { useState } from 'react'
 import UserDetail from './UserDetail';
 import PaymentDetail from './payment/PaymentDetail'
@@ -42,25 +41,8 @@ const sideBar = {
 }
 
 
-
-const nextBtn = {
-    textTransform: 'none',
-    height: '3rem',
-    width: '4rem',
-    background: '#2bd65b',
-    color: '#fff',
-    borderRadius: '4px',
-    padding: '20px',
-    minWidth: '160px',
-    lineHeight: '20px',
-    fontWeight: '600',
-    border: 'none',
-    height: '50px',
-}
-
 export default function Register({userData, setUserData, setPaymentData}) {
     
-    const [paymentType,setPaymentType]=useState()
     const [page ,setPage] = useState(true)
     
     let sidebtn1 = {

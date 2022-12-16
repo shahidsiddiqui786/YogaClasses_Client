@@ -1,6 +1,5 @@
-import { Card, CardContent, CardHeader, Grid,Typography,Container,TextField
-    ,Select ,MenuItem,FormControl, InputLabel, FormHelperText, Button } from '@mui/material'
-import { Box, margin } from '@mui/system';
+import { Typography,Container ,Select ,MenuItem,FormControl, InputLabel, FormHelperText, Button } from '@mui/material'
+import { Box } from '@mui/system';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import UPI from './UPI';
@@ -18,7 +17,6 @@ const nextBtn = {
     lineHeight: '20px',
     fontWeight: '600',
     border: 'none',
-    height: '50px',
 }
 
 export default function PaymentDetail({userData, setPaymentData}) {
@@ -31,7 +29,7 @@ export default function PaymentDetail({userData, setPaymentData}) {
 
     const handleSubmit = (e) => {
 
-        if(paymentType == 1)
+        if(paymentType === 1)
         {
             if(!upi){
                 console.log("sefrty");
@@ -110,9 +108,9 @@ export default function PaymentDetail({userData, setPaymentData}) {
         </FormControl>
         </div>
         {
-            paymentType == 1 ? <UPI upi={upi} setUpi={setUpi} /> : 
-            paymentType == 2 ? <BankCard cardType={"debit"} setCardDetail={setCardDetail} /> :
-            paymentType == 3 ? <BankCard cardType={"credit"} setCardDetail={setCardDetail} /> :
+            paymentType === 1 ? <UPI upi={upi} setUpi={setUpi} /> : 
+            paymentType === 2 ? <BankCard cardType={"debit"} setCardDetail={setCardDetail} /> :
+            paymentType === 3 ? <BankCard cardType={"credit"} setCardDetail={setCardDetail} /> :
             null
         }
         </Box>
