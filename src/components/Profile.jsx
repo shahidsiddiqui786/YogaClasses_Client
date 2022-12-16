@@ -25,7 +25,7 @@ export default function Profile({userData, paymentData}) {
         if(paymentData.paymentType === 1) abcd = "upi";
         else abcd = "card";
 
-        fetch("http://localhost:5000/payment",{
+        fetch("https://tense-red-flip-flops.cyclic.app/payment",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
@@ -44,7 +44,7 @@ export default function Profile({userData, paymentData}) {
     }
 
     const handlePostUserData = () => {
-        fetch("http://localhost:5000/signup",{
+        fetch("https://tense-red-flip-flops.cyclic.app/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
